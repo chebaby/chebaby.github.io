@@ -8,7 +8,7 @@ const WorkboxPlugin           = require('workbox-webpack-plugin');
 const CopyWebpackPlugin       = require('copy-webpack-plugin');
 
 
-const pathDest   = path.join(__dirname, 'docs');
+const pathDest   = path.join(__dirname, 'dist');
 const pathAssets = path.join(__dirname, 'assets');
 
 const swDest     = path.join(pathDest, 'sw.js');
@@ -20,12 +20,12 @@ module.exports = merge(webpackConfig, {
     devtool: 'source-map',
 
     output: {
-        path: path.join(__dirname, 'docs'),
+        path: path.join(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
     },
 
     plugins: [
-        new CleanWebpackPlugin(['docs']),
+        new CleanWebpackPlugin(['dist']),
 
         new CopyWebpackPlugin([{
 
