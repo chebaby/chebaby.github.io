@@ -29,8 +29,6 @@ require('scripts/typed');
 
 require('scripts/validator');
 
-require('scripts/contact');
-
 require('scripts/main');
 
 

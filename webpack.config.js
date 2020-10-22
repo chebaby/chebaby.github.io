@@ -7,8 +7,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 
 const dirNode = 'node_modules';
-const dirApp = path.join(__dirname, 'app');
-const dirAssets = path.join(__dirname, 'assets');
+const dirApp = path.join(__dirname, 'src', 'app');
+const dirAssets = path.join(__dirname, 'src', 'assets');
 
 /**
  * Webpack Configuration
@@ -38,7 +38,7 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'index.ejs')
+            template: path.join(__dirname, 'src', 'index.ejs')
         })
     ],
     module: {
