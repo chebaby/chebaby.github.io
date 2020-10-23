@@ -15,18 +15,6 @@ const pathAssets = path.join(__dirname, 'src', 'assets');
 const swDest     = path.join(pathDest, 'sw.js');
 const swSrc      = path.join(pathAssets, 'scripts', 'sw.js');
 
-const cleanOptions = {
-  root:     pathDest,
-  exclude:  [
-      'src', '.babelrc', '.editorconfig', '.gitignore', 'LICENSE', 'package.json',
-      'README.md', 'renovate.json', 'webpack.config.build.js', 'webpack.config.dev.js',
-      'webpack.config.js', 'yarn.lock', 'node_modules'
-  ],
-  verbose:  true,
-  dry:      true
-}
-
-
 module.exports = merge(webpackConfig, {
 
     devtool: 'source-map',
@@ -37,7 +25,6 @@ module.exports = merge(webpackConfig, {
     },
 
     plugins: [
-        // new CleanWebpackPlugin([pathDest], cleanOptions),
 
         new WebpackShellPlugin({
             onBuildStart:['node before.js'],
