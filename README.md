@@ -1,2 +1,0 @@
-# echebaby
-Developer portfolio
