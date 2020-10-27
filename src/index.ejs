@@ -113,7 +113,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-5 col-md-5">
                     <div class="about-left wow fadeInDown" data-wow-delay="0.4s">
-                        <img src="<%= require('./assets/images/about/sketchy_me.png') %>" alt="profile image">
+                        <img src="<%= require('./assets/images/about/me.jpg') %>" alt="profile image">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-7 col-md-7">
@@ -121,7 +121,7 @@
                         <h1>
                             I'm <span class="text-primary">Nour-Eddine ECH-CHEBABY</span> <br>
                             <span class="spelling">Pronounced : /ṇɔrdɪṇ/ /ʃɪbabɪ/</span> <br>
-                            and I'm a Full stack Developer
+                            and I'm a Backend Developer
                         </h1>
                         <p>I design and code beautifully simple things, and I love what I do.</p>
                         <hr>
@@ -130,9 +130,26 @@
                         <hr>
                         <div class="socials">
                             <ul>
-                                <li><a href="https://twitter.com/__chebaby" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://github.com/chebaby" target="_blank"><i class="fa fa-github"></i></a></li>
-                                <li><a href="https://stackoverflow.com/users/4325011/chebaby" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+                                <li>
+                                    <a href="https://twitter.com/__chebaby" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/chebaby" target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://stackoverflow.com/users/4325011/chebaby" target="_blank">
+                                        <i class="fa fa-stack-overflow"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact" target="_blank">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -512,22 +529,38 @@ I’m always open to discussing product design work or partnership opportunities
              <div class="row">
                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-contact-form">
 
-                     <form id="contact-form" method="post" action="contact.php">
+                     <form id="contact-form" method="POST" action="https://formspree.io/f/mdopeqwp">
 
-                         <div class="messages"></div> <!--you can change the message in contact.php file -->
+                         <div class="messages"></div>
 
                          <div class="controls">
 
                              <div class="row">
                                  <div class="col-md-6">
                                      <div class="form-group">
-                                         <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required="required" data-error="Fullname is required.">
+                                         <input
+                                                 type="text"
+                                                 name="name"
+                                                 id="form_name"
+                                                 class="form-control"
+                                                 placeholder="Enter your full name *"
+                                                 required="required"
+                                                 data-error="Fullname is required."
+                                         >
                                          <div class="help-block with-errors"></div>
                                      </div>
                                  </div>
                                  <div class="col-md-6">
                                      <div class="form-group">
-                                         <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                                         <input
+                                                 type="email"
+                                                 name="_replyto"
+                                                 id="form_email"
+                                                 class="form-control"
+                                                 placeholder="Enter your email *"
+                                                 required="required"
+                                                 data-error="Valid email is required."
+                                         >
                                          <div class="help-block with-errors"></div>
                                      </div>
                                  </div>
@@ -535,12 +568,19 @@ I’m always open to discussing product design work or partnership opportunities
                              <div class="row">
                                  <div class="col-md-12">
                                      <div class="form-group">
-                                         <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required="required" data-error="Leave a message for me"></textarea>
+                                         <textarea
+                                                 name="message"
+                                                 id="form_message"
+                                                 class="form-control"
+                                                 placeholder="Your Message *"
+                                                 rows="4"
+                                                 required="required"
+                                                 data-error="Leave a message for me"></textarea>
                                          <div class="help-block with-errors"></div>
                                      </div>
                                  </div>
                                  <div class="col-md-12">
-                                     <button class="btn btn-send" value="">Send message</button>
+                                     <button type="submit" class="btn btn-send" value="">Send message</button>
                                  </div>
                              </div>
                          </div>
@@ -563,8 +603,11 @@ I’m always open to discussing product design work or partnership opportunities
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <p>Made with <span style="font-size:100%;color:red;">&hearts;</span>
- <a href="https://www.codester.com/user/MouriTheme/" target="_blank">Nour-Eddine ECH-CHEBABY</a></p>
+                    <p>
+                        Made with <span style="font-size:100%;color:red;">&hearts;</span> <br>
+                        Nour-Eddine ECH-CHEBABY <br>
+                        2017
+                    </p>
                 </div>
             </div>
         </div>

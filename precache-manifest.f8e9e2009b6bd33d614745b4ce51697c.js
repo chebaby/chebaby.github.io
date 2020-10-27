@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "src/assets/images/testimonial/2.png"
   },
   {
-    "revision": "589d86405090d65db54522b9129b0d9e",
+    "revision": "b91b2ea11da5a6ee6ce564c3963eba95",
     "url": "index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "src/assets/images/portfolio/small/6.png"
   },
   {
-    "revision": "c920fecf8ec46a2fb0596dad5976be47",
-    "url": "src/assets/images/about/sketchy_me.png"
+    "revision": "765c416da18e88c01f78929f5ceb5b42",
+    "url": "src/assets/images/about/me.jpg"
   },
   {
     "revision": "0981ed9bfa07cdb738ace8594facbade",
@@ -76,12 +76,12 @@ self.__precacheManifest = [
     "url": "src/assets/fonts/fontawesome-webfont.woff"
   },
   {
-    "revision": "448c34a56d699c29117adc64c43affeb",
-    "url": "src/assets/fonts/glyphicons-halflings-regular.woff2"
-  },
-  {
     "revision": "f4769f9bdb7466be65088239c12046d1",
     "url": "src/assets/fonts/glyphicons-halflings-regular.eot"
+  },
+  {
+    "revision": "448c34a56d699c29117adc64c43affeb",
+    "url": "src/assets/fonts/glyphicons-halflings-regular.woff2"
   },
   {
     "revision": "fa2772327f55d8198301fdb8bcfc8158",
@@ -108,9 +108,9 @@ self.__precacheManifest = [
     "url": "src/assets/fonts/fontawesome-webfont.svg"
   },
   {
-    "url": "bundle.4e54f48ab41489fa16e5.css"
+    "url": "bundle.cb9896a42aded8b03eeb.js"
   },
   {
-    "url": "bundle.4d0c383443d2e88987bc.js"
+    "url": "bundle.0824ed0b3f1f4bb56057.css"
   }
 ];
