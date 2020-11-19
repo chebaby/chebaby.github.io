@@ -6435,7 +6435,7 @@ img {
 /* --------- 5. Banner area css starts -----------*/
 
 .banner-area{
-    background-image: url(src/assets/images/home/home_bg.png);
+    background-image: url(src/assets/images/home/working-in-dark-mode.jpg);
     background-color: rgb(115, 123, 150);
     background-position: center;
     -webkit-background-size:cover;
@@ -7246,7 +7246,7 @@ NB: This is the responsive stylesheet of this theme.
 
     .banner-area {
 
-        background-position: -21em;
+        background-position: 0em;
     }
 
     .section-padding {
@@ -7441,7 +7441,7 @@ NB: This is the responsive stylesheet of this theme.
 
     .banner-area {
 
-        background-position: -33em;
+        background-position: 0em;
     }
 
     .text-affect, .typed-cursor {
@@ -7453,7 +7453,7 @@ NB: This is the responsive stylesheet of this theme.
 
     .banner-area {
 
-        background-position: -47em;
+        background-position: 0em;
     }
 
     .text-affect, .typed-cursor {
@@ -7495,9 +7495,7 @@ NB: This is the responsive stylesheet of this theme.
 
     .banner-area {
         height: 100%;
-
-        background-position: 9em;
-        background-repeat-x: no-repeat;
+        background-repeat: no-repeat;
     }
 
 }
@@ -7507,4 +7505,4 @@ NB: This is the responsive stylesheet of this theme.
 
 
 
-/*# sourceMappingURL=bundle.0824ed0b3f1f4bb56057.css.map*/
+/*# sourceMappingURL=bundle.81631aed701fb60614e9.css.map*/

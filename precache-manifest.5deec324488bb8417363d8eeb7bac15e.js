@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "src/assets/images/testimonial/2.png"
   },
   {
-    "revision": "b91b2ea11da5a6ee6ce564c3963eba95",
+    "revision": "2cc1e1338800bc8c724f343d9bf52a47",
     "url": "index.html"
   },
   {
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "src/assets/images/testimonial/1.png"
   },
   {
-    "revision": "53fce380b2600ae380508554fac6942d",
-    "url": "src/assets/images/home/home_bg.png"
+    "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
+    "url": "src/assets/fonts/fontawesome-webfont.svg"
   },
   {
     "revision": "a7dbb4eb12c7b51061f6e2d9bbcf9f9e",
@@ -68,16 +68,20 @@ self.__precacheManifest = [
     "url": "src/assets/images/owl/owl.video.play.png"
   },
   {
+    "revision": "26a88f1a93be1cf3a22907cdbd1af511",
+    "url": "src/assets/images/home/working-in-dark-mode.jpg"
+  },
+  {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "src/assets/fonts/fontawesome-webfont.woff2"
   },
   {
-    "revision": "fee66e712a8a08eef5805a46892932ad",
-    "url": "src/assets/fonts/fontawesome-webfont.woff"
-  },
-  {
     "revision": "f4769f9bdb7466be65088239c12046d1",
     "url": "src/assets/fonts/glyphicons-halflings-regular.eot"
+  },
+  {
+    "revision": "fee66e712a8a08eef5805a46892932ad",
+    "url": "src/assets/fonts/fontawesome-webfont.woff"
   },
   {
     "revision": "448c34a56d699c29117adc64c43affeb",
@@ -104,13 +108,9 @@ self.__precacheManifest = [
     "url": "src/assets/fonts/glyphicons-halflings-regular.svg"
   },
   {
-    "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
-    "url": "src/assets/fonts/fontawesome-webfont.svg"
+    "url": "bundle.de893b905eb6841181c7.js"
   },
   {
-    "url": "bundle.cb9896a42aded8b03eeb.js"
-  },
-  {
-    "url": "bundle.0824ed0b3f1f4bb56057.css"
+    "url": "bundle.81631aed701fb60614e9.css"
   }
 ];
