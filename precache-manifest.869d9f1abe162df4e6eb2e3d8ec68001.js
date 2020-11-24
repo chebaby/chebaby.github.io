@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "a7dbb4eb12c7b51061f6e2d9bbcf9f9e",
-    "url": "src/assets/images/testimonial/2.png"
+    "revision": "4a37f8008959c75f619bf0a3a4e2d7a2",
+    "url": "src/assets/images/owl/owl.video.play.png"
   },
   {
-    "revision": "2cc1e1338800bc8c724f343d9bf52a47",
+    "revision": "bcb289635ae658f90b82e9c7d9de5f9d",
     "url": "index.html"
   },
   {
@@ -52,20 +52,8 @@ self.__precacheManifest = [
     "url": "src/assets/images/portfolio/small/fooz.png"
   },
   {
-    "revision": "a7dbb4eb12c7b51061f6e2d9bbcf9f9e",
-    "url": "src/assets/images/testimonial/1.png"
-  },
-  {
     "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
     "url": "src/assets/fonts/fontawesome-webfont.svg"
-  },
-  {
-    "revision": "a7dbb4eb12c7b51061f6e2d9bbcf9f9e",
-    "url": "src/assets/images/testimonial/3.png"
-  },
-  {
-    "revision": "4a37f8008959c75f619bf0a3a4e2d7a2",
-    "url": "src/assets/images/owl/owl.video.play.png"
   },
   {
     "revision": "26a88f1a93be1cf3a22907cdbd1af511",
@@ -111,6 +99,6 @@ self.__precacheManifest = [
     "url": "bundle.de893b905eb6841181c7.js"
   },
   {
-    "url": "bundle.81631aed701fb60614e9.css"
+    "url": "bundle.4a3caa338dc208ad82b0.css"
   }
 ];
