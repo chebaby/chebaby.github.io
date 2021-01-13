@@ -19,7 +19,7 @@ Table of content
 5. Banner area css
 6. About area css
 7. Resume area css
-8. Services area css
+8. blog area css
 9. Portfolio area css
 10. Testimonial area css
 11. Invitation area css
@@ -576,23 +576,28 @@ canvas{
 
 /*------ Resume area ends ---------*/
 
-/*---------------8. Services area Starts--------------*/
+/*---------------8. blog area Starts--------------*/
 
-.services-area {
+.blog-area {
     background-color: #eeeeee;
 }
 
-.services-icon i {
+.blog-area a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-icon i {
     font-size: 35px;
     color: #ffffff;
 }
 
-.services-content h3 {
+.blog-content h3 {
     line-height: 1.9;
     text-transform: uppercase;
 }
 
-.services-icon {
+.blog-icon {
     border: 1px solid #E15F41;
     display: inline-block;
     width: 80px;
@@ -602,7 +607,7 @@ canvas{
     background-color: #E15F41;
 }
 
-.single-services {
+.single-blog {
     padding: 40px 20px;
     box-shadow: rgba(58,78,95,0.2) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px;
     margin-bottom: 15px;
@@ -611,22 +616,22 @@ canvas{
     border-radius:10px;
 }
 
-.single-services:hover {
+.single-blog:hover {
     box-shadow: 1px 3px 4px 5px rgba(199,199,199,.8);
     transition: ease .09s;
 }
 
-.single-services:hover .services-icon{
+.single-blog:hover .blog-icon{
     background-color: #ffffff;
     transition: ease .3s;
     border-color: #E15F41;
 }
 
-.single-services:hover .services-icon i{
+.single-blog:hover .blog-icon i{
     color: #E15F41;
 }
 
-.single-services:hover{
+.single-blog:hover{
     background-color: #E15F41;
     -webkit-transition: .9s;
     -moz-transition: .9s ;
@@ -634,14 +639,14 @@ canvas{
     -o-transition: .9s ;
     transition: .9s ;
 }
-.single-services:hover .services-content{
+.single-blog:hover .blog-content{
     color: #ffffff;
 }
-.single-services:hover .services-content h3{
+.single-blog:hover .blog-content h3{
     color: #ffffff;
 }
 
-/*--------------- Services area ends --------------*/
+/*--------------- blog area ends --------------*/
 
 /*--------------9. Portfolio area starts-----------*/
 
