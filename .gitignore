@@ -9,6 +9,7 @@ dist/
 node_modules/
 bower_components/
 .phpintel/
+.vscode/
 
 ## Files
 result.xml
