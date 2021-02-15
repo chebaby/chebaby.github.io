@@ -1,16 +1,16 @@
 self.__precacheManifest = [
   {
-    "url": "bundle.a239fe3e9b9036c46cae.css"
+    "url": "bundle.40eeea716131d22250e9.css"
   },
   {
-    "url": "bundle.7468303f05060ae54501.js"
+    "url": "bundle.3e24ad2e0dc7e2195929.js"
   },
   {
-    "revision": "765c416da18e88c01f78929f5ceb5b42",
+    "revision": "c52f34a1024d424ebe11ea593e165011",
     "url": "src/assets/images/about/me.jpg"
   },
   {
-    "revision": "f1ea436fca910983856919eb86ed457f",
+    "revision": "c9d6c326a3ca377508c1aea5391f45c8",
     "url": "src/assets/images/portfolio/allsoussmassa_1920x1140.jpg"
   },
   {
@@ -58,6 +58,10 @@ self.__precacheManifest = [
     "url": "src/assets/images/portfolio/imagebank_450x300.png"
   },
   {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "src/assets/fonts/fontawesome-webfont.eot"
+  },
+  {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "src/assets/fonts/fontawesome-webfont.woff2"
   },
@@ -66,8 +70,8 @@ self.__precacheManifest = [
     "url": "src/assets/fonts/fontawesome-webfont.woff"
   },
   {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "src/assets/fonts/fontawesome-webfont.eot"
+    "revision": "b06871f281fee6b241d60582ae9369b9",
+    "url": "src/assets/fonts/fontawesome-webfont.ttf"
   },
   {
     "revision": "f4769f9bdb7466be65088239c12046d1",
@@ -82,16 +86,16 @@ self.__precacheManifest = [
     "url": "src/assets/fonts/glyphicons-halflings-regular.woff"
   },
   {
-    "revision": "f721466883998665b87923b92dea655b",
-    "url": "src/assets/fonts/glyphicons-halflings-regular.svg"
-  },
-  {
     "revision": "e18bbf611f2a2e43afc071aa2f4e1512",
     "url": "src/assets/fonts/glyphicons-halflings-regular.ttf"
   },
   {
-    "revision": "b06871f281fee6b241d60582ae9369b9",
-    "url": "src/assets/fonts/fontawesome-webfont.ttf"
+    "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
+    "url": "src/assets/fonts/fontawesome-webfont.svg"
+  },
+  {
+    "revision": "f721466883998665b87923b92dea655b",
+    "url": "src/assets/fonts/glyphicons-halflings-regular.svg"
   },
   {
     "revision": "4a37f8008959c75f619bf0a3a4e2d7a2",
@@ -102,11 +106,7 @@ self.__precacheManifest = [
     "url": "src/assets/images/home/working-in-dark-mode.jpg"
   },
   {
-    "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
-    "url": "src/assets/fonts/fontawesome-webfont.svg"
-  },
-  {
-    "revision": "06460b8d6bcb7cfb1ea2cadb19ad36a8",
+    "revision": "bcf175cd4743e4f4043e6e5a8dd8942f",
     "url": "index.html"
   }
 ];
