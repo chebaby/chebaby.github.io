@@ -1,9 +1,9 @@
 self.__precacheManifest = [
   {
-    "url": "bundle.36c1848c17c1ba87ccac.css"
+    "url": "bundle.ee1e8b42ddb36148e15e.css"
   },
   {
-    "url": "bundle.3e24ad2e0dc7e2195929.js"
+    "url": "bundle.7468303f05060ae54501.js"
   },
   {
     "revision": "a97377da205e5f3e14dadaa546fe5dbc",
@@ -66,6 +66,10 @@ self.__precacheManifest = [
     "url": "src/assets/images/portfolio/tripdiem_450x300.png"
   },
   {
+    "revision": "fee66e712a8a08eef5805a46892932ad",
+    "url": "src/assets/fonts/fontawesome-webfont.woff"
+  },
+  {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
     "url": "src/assets/fonts/fontawesome-webfont.eot"
   },
@@ -74,8 +78,8 @@ self.__precacheManifest = [
     "url": "src/assets/fonts/fontawesome-webfont.woff2"
   },
   {
-    "revision": "fee66e712a8a08eef5805a46892932ad",
-    "url": "src/assets/fonts/fontawesome-webfont.woff"
+    "revision": "448c34a56d699c29117adc64c43affeb",
+    "url": "src/assets/fonts/glyphicons-halflings-regular.woff2"
   },
   {
     "revision": "b06871f281fee6b241d60582ae9369b9",
@@ -86,35 +90,31 @@ self.__precacheManifest = [
     "url": "src/assets/fonts/glyphicons-halflings-regular.eot"
   },
   {
-    "revision": "448c34a56d699c29117adc64c43affeb",
-    "url": "src/assets/fonts/glyphicons-halflings-regular.woff2"
-  },
-  {
     "revision": "fa2772327f55d8198301fdb8bcfc8158",
     "url": "src/assets/fonts/glyphicons-halflings-regular.woff"
-  },
-  {
-    "revision": "e18bbf611f2a2e43afc071aa2f4e1512",
-    "url": "src/assets/fonts/glyphicons-halflings-regular.ttf"
-  },
-  {
-    "revision": "4a37f8008959c75f619bf0a3a4e2d7a2",
-    "url": "src/assets/images/owl/owl.video.play.png"
-  },
-  {
-    "revision": "f721466883998665b87923b92dea655b",
-    "url": "src/assets/fonts/glyphicons-halflings-regular.svg"
   },
   {
     "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
     "url": "src/assets/fonts/fontawesome-webfont.svg"
   },
   {
+    "revision": "e18bbf611f2a2e43afc071aa2f4e1512",
+    "url": "src/assets/fonts/glyphicons-halflings-regular.ttf"
+  },
+  {
+    "revision": "f721466883998665b87923b92dea655b",
+    "url": "src/assets/fonts/glyphicons-halflings-regular.svg"
+  },
+  {
     "revision": "26a88f1a93be1cf3a22907cdbd1af511",
     "url": "src/assets/images/home/working-in-dark-mode.jpg"
   },
   {
-    "revision": "cce19c7c346e62375cfbc196d954b59a",
+    "revision": "4a37f8008959c75f619bf0a3a4e2d7a2",
+    "url": "src/assets/images/owl/owl.video.play.png"
+  },
+  {
+    "revision": "1a86173da8c2d4ea50bd2a16c950f170",
     "url": "index.html"
   }
 ];
