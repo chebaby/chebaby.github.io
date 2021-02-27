@@ -1,13 +1,13 @@
 self.__precacheManifest = [
   {
-    "url": "bundle.ee1e8b42ddb36148e15e.css"
+    "url": "bundle.2f595855363b894a9d8e.css"
   },
   {
     "url": "bundle.7468303f05060ae54501.js"
   },
   {
     "revision": "a97377da205e5f3e14dadaa546fe5dbc",
-    "url": "src/assets/images/about/me.jpg"
+    "url": "src/assets/images/about/nour-eddine-ech-chebaby.jpg"
   },
   {
     "revision": "c9d6c326a3ca377508c1aea5391f45c8",
@@ -74,24 +74,24 @@ self.__precacheManifest = [
     "url": "src/assets/fonts/fontawesome-webfont.eot"
   },
   {
+    "revision": "b06871f281fee6b241d60582ae9369b9",
+    "url": "src/assets/fonts/fontawesome-webfont.ttf"
+  },
+  {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "src/assets/fonts/fontawesome-webfont.woff2"
   },
   {
-    "revision": "448c34a56d699c29117adc64c43affeb",
-    "url": "src/assets/fonts/glyphicons-halflings-regular.woff2"
-  },
-  {
-    "revision": "b06871f281fee6b241d60582ae9369b9",
-    "url": "src/assets/fonts/fontawesome-webfont.ttf"
+    "revision": "fa2772327f55d8198301fdb8bcfc8158",
+    "url": "src/assets/fonts/glyphicons-halflings-regular.woff"
   },
   {
     "revision": "f4769f9bdb7466be65088239c12046d1",
     "url": "src/assets/fonts/glyphicons-halflings-regular.eot"
   },
   {
-    "revision": "fa2772327f55d8198301fdb8bcfc8158",
-    "url": "src/assets/fonts/glyphicons-halflings-regular.woff"
+    "revision": "448c34a56d699c29117adc64c43affeb",
+    "url": "src/assets/fonts/glyphicons-halflings-regular.woff2"
   },
   {
     "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
@@ -114,7 +114,7 @@ self.__precacheManifest = [
     "url": "src/assets/images/owl/owl.video.play.png"
   },
   {
-    "revision": "1a86173da8c2d4ea50bd2a16c950f170",
+    "revision": "79faa2996b7a36b14c60a2ff1359bb99",
     "url": "index.html"
   }
 ];
