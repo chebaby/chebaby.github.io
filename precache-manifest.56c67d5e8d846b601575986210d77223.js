@@ -66,24 +66,16 @@ self.__precacheManifest = [
     "url": "src/assets/images/portfolio/tripdiem_450x300.png"
   },
   {
-    "revision": "fee66e712a8a08eef5805a46892932ad",
-    "url": "src/assets/fonts/fontawesome-webfont.woff"
-  },
-  {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "src/assets/fonts/fontawesome-webfont.eot"
-  },
-  {
-    "revision": "b06871f281fee6b241d60582ae9369b9",
-    "url": "src/assets/fonts/fontawesome-webfont.ttf"
-  },
-  {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "src/assets/fonts/fontawesome-webfont.woff2"
   },
   {
-    "revision": "fa2772327f55d8198301fdb8bcfc8158",
-    "url": "src/assets/fonts/glyphicons-halflings-regular.woff"
+    "revision": "fee66e712a8a08eef5805a46892932ad",
+    "url": "src/assets/fonts/fontawesome-webfont.woff"
+  },
+  {
+    "revision": "b06871f281fee6b241d60582ae9369b9",
+    "url": "src/assets/fonts/fontawesome-webfont.ttf"
   },
   {
     "revision": "f4769f9bdb7466be65088239c12046d1",
@@ -92,6 +84,14 @@ self.__precacheManifest = [
   {
     "revision": "448c34a56d699c29117adc64c43affeb",
     "url": "src/assets/fonts/glyphicons-halflings-regular.woff2"
+  },
+  {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "src/assets/fonts/fontawesome-webfont.eot"
+  },
+  {
+    "revision": "fa2772327f55d8198301fdb8bcfc8158",
+    "url": "src/assets/fonts/glyphicons-halflings-regular.woff"
   },
   {
     "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
@@ -106,12 +106,12 @@ self.__precacheManifest = [
     "url": "src/assets/fonts/glyphicons-halflings-regular.svg"
   },
   {
-    "revision": "26a88f1a93be1cf3a22907cdbd1af511",
-    "url": "src/assets/images/home/working-in-dark-mode.jpg"
-  },
-  {
     "revision": "4a37f8008959c75f619bf0a3a4e2d7a2",
     "url": "src/assets/images/owl/owl.video.play.png"
+  },
+  {
+    "revision": "26a88f1a93be1cf3a22907cdbd1af511",
+    "url": "src/assets/images/home/working-in-dark-mode.jpg"
   },
   {
     "revision": "79faa2996b7a36b14c60a2ff1359bb99",
