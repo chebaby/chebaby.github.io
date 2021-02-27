@@ -124,6 +124,27 @@ $(document).ready(function () {
 
         loop: true
     });
+
+    // wait for layout calculation to finish
+    setTimeout(function () {
+        var heights = [];
+
+        var blogCards = document.querySelectorAll('.single-blog');
+
+        blogCards.forEach( function(element, index) {
+            heights.push(element.getBoundingClientRect().height);
+        });
+
+        function getMaxOfArray(numArray) {
+          return Math.max.apply(null, numArray);
+        }
+
+        var maxHeight = getMaxOfArray(heights) + 'px';
+
+        blogCards.forEach( function(element, index) {
+            element.style.height = maxHeight ;
+        });
+    }, 3000);
 });
 
 
