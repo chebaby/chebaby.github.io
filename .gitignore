@@ -1,16 +1,23 @@
-## System and generated files
-.idea
-.DS_Store
-.sass-cache
-
-## Directories
-log/
+## Build output
 dist/
-node_modules/
-bower_components/
-.phpintel/
-.vscode/
+.astro/
 
-## Files
-result.xml
-npm-debug.log
+## Dependencies
+node_modules/
+
+## Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+log/
+
+## Environment
+.env
+.env.*
+!.env.example
+
+## System and editor files
+.idea/
+.vscode/
+.DS_Store
