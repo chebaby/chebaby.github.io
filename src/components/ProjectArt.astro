@@ -1,0 +1,70 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  slug: string;
+  name: string;
+  /** Position in the list, used by the placeholder only. */
+  index: number;
+  sizes: string;
+}
+
+const { slug, name, index, sizes } = Astro.props;
+
+// Drop `<slug>-concept.webp` into src/assets/projects/ and it replaces the placeholder at the next build.
+const artworks = import.meta.glob<ImageMetadata>('../assets/projects/*.{webp,png,jpg,jpeg}', {
+  eager: true,
+  import: 'default',
+});
+const artwork = Object.entries(artworks).find(([path]) => path.split('/').pop()?.startsWith(`${slug}-concept.`))?.[1];
+---
+
+{
+  artwork ? (
+    <Image
+      class="art"
+      src={artwork}
+      alt={`Illustrative concept artwork for ${name}. Not a screenshot of the application.`}
+      widths={[480, 720, 1080]}
+      sizes={sizes}
+      loading="lazy"
+    />
+  ) : (
+    <div class="art placeholder" aria-hidden="true">
+      <span class="initial">{name.charAt(0)}</span>
+      <span class="index mono">No. {String(index + 1).padStart(2, '0')}</span>
+    </div>
+  )
+}
+
+<style>
+  .art {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Neutral stand-in until the concept artwork is supplied. It makes no claim about the product. */
+  .placeholder {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background:
+      linear-gradient(var(--rule) 1px, transparent 1px) 0 0 / 100% 40px,
+      linear-gradient(90deg, var(--rule) 1px, transparent 1px) 0 0 / 40px 100%,
+      var(--surf);
+  }
+
+  .initial {
+    font: 700 clamp(5rem, 14vw, 9rem) / 1 var(--serif);
+    color: var(--acc);
+    opacity: 0.85;
+  }
+
+  .index {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    color: var(--mute);
+  }
+</style>

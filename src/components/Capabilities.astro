@@ -1,0 +1,110 @@
+---
+import { capabilities } from '../data/capabilities';
+---
+
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 id="services-title">How I can help</h2>
+      <p>
+        Five related areas of work. The labels say how established each one is, so you know what to expect.
+      </p>
+    </div>
+
+    <ol class="list">
+      {
+        capabilities.map((item, index) => (
+          <li class="item reveal" style={`--delay:${index * 60}ms`}>
+            <span class="num mono" aria-hidden="true">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <div class="title">
+              <h3>{item.title}</h3>
+              <p class={`tag mono tag--${item.maturity}`}>{item.maturityLabel}</p>
+            </div>
+            <p class="text">{item.description}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<style>
+  .list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px 24px;
+    padding-block: 28px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .item:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .num {
+    grid-column: 1 / 2;
+    padding-top: 0.5rem;
+    color: var(--mute);
+  }
+
+  .title {
+    grid-column: 2 / 7;
+  }
+
+  h3 {
+    font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+    line-height: 1.15;
+  }
+
+  .text {
+    grid-column: 8 / 13;
+    max-width: 34rem;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    color: var(--mute);
+  }
+
+  .tag::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 1.5px solid var(--acc);
+    border-radius: 50%;
+    background: var(--acc);
+  }
+
+  /* A hollow marker signals "still being explored" rather than "established". */
+  .tag--exploring::before {
+    background: transparent;
+  }
+
+  .tag--focus::before,
+  .tag--hands-on::before {
+    background: linear-gradient(90deg, var(--acc) 50%, transparent 50%);
+  }
+
+  @media (max-width: 820px) {
+    .num {
+      grid-column: 1 / -1;
+      padding-top: 0;
+    }
+
+    .title,
+    .text {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

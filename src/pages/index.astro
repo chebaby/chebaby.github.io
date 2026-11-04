@@ -1,21 +1,22 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Capabilities from '../components/Capabilities.astro';
+import Projects from '../components/Projects.astro';
+import Approach from '../components/Approach.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Nour-Eddine ECH-CHEBABY</title>
-    <meta name="description" content="Portfolio of Nour-Eddine ECH-CHEBABY. Under development." />
-    <link rel="canonical" href={new URL('/', Astro.site).href} />
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
-  </head>
-  <body>
-    <main>
-      <h1>Nour-Eddine ECH-CHEBABY</h1>
-      <p>This portfolio is under development.</p>
-    </main>
-  </body>
-</html>
+<BaseLayout>
+  <Header />
+  <main id="main">
+    <Hero />
+    <Capabilities />
+    <Projects />
+    <Approach />
+    <Contact />
+  </main>
+  <Footer />
+</BaseLayout>

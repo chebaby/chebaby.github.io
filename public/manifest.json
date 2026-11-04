@@ -1,12 +1,13 @@
 {
-    "theme_color": "#3367D6",
-    "background_color": "#3367D6",
+    "name": "Nour-Eddine Ech-Chebaby",
+    "short_name": "Ech-Chebaby",
+    "description": "Software engineer building reliable, maintainable and secure web applications: Laravel and PHP backends, React frontends, application security and deployment.",
+    "lang": "en",
+    "theme_color": "#F3EEE4",
+    "background_color": "#F3EEE4",
     "display": "standalone",
     "scope": "/",
-    "start_url": "https://echebaby.com?utm_source=pwa",
-    "short_name": "chebaby",
-    "name": "Nour-Eddine ECH-CHEBABY",
-    "description": "Backend Engineer with 5+ years experience in web development with extensive knowledge of @laravelphp.",
+    "start_url": "/?utm_source=pwa",
     "icons": [
         {
             "src": "/icon-192x192.png",

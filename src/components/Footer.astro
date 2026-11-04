@@ -1,0 +1,64 @@
+---
+import { site } from '../config/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="wrap bar">
+    <div>
+      <p class="name">{site.name}</p>
+      <p class="mute">{site.jobTitle} · © {year}</p>
+    </div>
+    <nav aria-label="Elsewhere">
+      <ul>
+        <li><a href={site.blog}>Blog</a></li>
+        {
+          site.social.map((link) => (
+            <li>
+              <a href={link.href} target="_blank" rel="noopener noreferrer">
+                {link.label}
+                <span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+          ))
+        }
+        <li><a href={`mailto:${site.email}`}>Email</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  footer {
+    padding-block: 44px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 28px;
+  }
+
+  .name {
+    margin-bottom: 8px;
+    font: 700 clamp(1.4rem, 2.6vw, 2.2rem) / 1.1 var(--serif);
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: inline-block;
+    padding: 8px 0;
+    text-underline-offset: 4px;
+  }
+</style>
