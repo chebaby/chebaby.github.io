@@ -24,10 +24,11 @@ export const principles: Principle[] = [
   },
   {
     title: 'Ready for production',
-    description: 'Deployment, queues, workers and maintenance are part of the job, not someone else’s problem.',
+    description: 'Deployment, queues, workers and maintenance are part of the job, not an afterthought.',
   },
   {
     title: 'Pragmatic about technology',
-    description: 'That includes AI: I will say so plainly when a simpler approach is the better one.',
+    description:
+      'I weigh trade-offs and technical debt before choosing tools, and that includes AI: I will say plainly when a simpler approach is the better one.',
   },
 ];

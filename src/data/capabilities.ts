@@ -28,7 +28,7 @@ export const capabilities: Capability[] = [
     maturity: 'focus',
     maturityLabel: 'Focus area',
     description:
-      'Secure software engineering at the application level: hardening, reviewing application-level risks and improving security practices. This is engineering work, not a formal audit or certification.',
+      'Security as part of application engineering: access control, input handling, dependency management and hardening, plus review of application-level risks. This is engineering work, not a formal audit or certification.',
   },
   {
     title: 'Deployment & Infrastructure',

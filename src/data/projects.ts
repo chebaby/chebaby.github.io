@@ -36,7 +36,7 @@ export const projects: Project[] = [
       'The platform itself handles timed play sessions, group play with leaderboards, a points system and protection against duplicate mission rewards. That design belongs to the codebase as a whole; my own contributions are the ones listed below.',
     ],
     contributions: [
-      'Production deployment setup: a containerized stack that runs the web application, background jobs, scheduled tasks, real-time messaging and the database as separate services, so each can be managed on its own. This is the configuration; I make no claim about how a live deployment performed.',
+      'Production deployment setup: a containerized stack that runs the web application, background jobs, scheduled tasks, real-time messaging and the database as separate services, so each can be managed on its own. This describes the configuration, not how a live deployment performed.',
       'Mission-location administration: reworked the admin controls for a mission’s location with coordinate checking, radius presets and clearer errors that keep the admin’s input for correction, backed by frontend tests for edge cases and accessibility.',
       'Deployment script: production environment configuration and a script improved for error handling and the order of its commands.',
       'Seeding reliability: fixed a seeding failure reported in production by correcting how the admin and user factories generate fake data.',
@@ -100,7 +100,7 @@ export const projects: Project[] = [
       'Program and project matching: a weighted ranking that matches projects to programs using eligibility criteria.',
       'Workflow logic: selection of a project holder’s lead active project, workflow middleware, and event-driven notifications with activity recording.',
       'Architecture and modelling: set the initial structure and modelled how projects, programs and their support relate, following Laravel conventions, with feature tests for partner authentication.',
-      'Infrastructure and maintenance: Docker build and Compose changes, container healthcheck corrections, and hands-on server maintenance, application installations and environment configuration. I make no claim about measured results.',
+      'Infrastructure and maintenance: Docker build and Compose changes, container healthcheck corrections, and hands-on server maintenance, application installations and environment configuration. Measured results are not covered here.',
     ],
     technologies: [
       'Laravel 11',
@@ -150,7 +150,7 @@ export const projects: Project[] = [
     ],
     contributions: [
       'Demand lifecycle automation: a scheduled command that automatically closes financing requests older than a configurable period. Its production schedule is not covered here.',
-      'City search: replaced loading a full city list into each of the three request forms with search-as-you-type, coordinating the form, a search endpoint and a database index. No benchmark exists, so I make no speed claim.',
+      'City search: replaced loading a full city list into each of the three request forms with search-as-you-type, coordinating the form, a search endpoint and a database index. No benchmark was taken, so there is no speed claim.',
       'Transfer document: made the PDF in the accepted-application transfer more accurate and complete, covering borrower and co-borrower details, living arrangements, income and profession information, and financing summary labels and dates.',
       'Data consistency: fixed co-borrower reuse so submitted details update the existing record, and prevented duplicate transfer notifications and an offer display bug.',
     ],

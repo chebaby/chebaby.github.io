@@ -6,7 +6,7 @@ export const site = {
   jobTitle: 'Software Engineer',
   title: 'Nour-Eddine Ech-Chebaby | Software Engineer: Laravel, full-stack and application security',
   description:
-    'Software engineer building reliable, maintainable and secure web applications: Laravel and PHP backends, React frontends, application security and deployment. Based in Morocco, working internationally.',
+    'Software engineer building web applications with a focus on reliability, maintainability and security: Laravel and PHP backends, React frontends, application security and deployment. Based in Morocco, working internationally.',
 
   /** Public contact address, shown on the page and used by the mailto fallback. */
   email: import.meta.env.PUBLIC_CONTACT_EMAIL || 'contact.chebaby@gmail.com',
