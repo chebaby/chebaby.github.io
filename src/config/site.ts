@@ -21,7 +21,6 @@ export const site = {
   blog: '/blog/',
   social: [
     { label: 'GitHub', href: 'https://github.com/chebaby' },
-    { label: 'LinkedIn', href: 'https://linkedin.com/in/chebaby' },
   ],
 } as const;
 

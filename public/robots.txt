@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+Sitemap: https://echebaby.com/sitemap.xml
+Sitemap: https://echebaby.com/blog/sitemap.xml
