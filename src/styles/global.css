@@ -71,11 +71,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Scroll is locked while a project dialog is open. */
-body:has(dialog[open]) {
-  overflow: hidden;
-}
-
 img,
 svg {
   display: block;

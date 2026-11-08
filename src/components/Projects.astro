@@ -73,20 +73,3 @@ import ProjectCard from './ProjectCard.astro';
     }
   }
 </style>
-
-<script>
-  document.querySelectorAll<HTMLButtonElement>('[data-dialog-open]').forEach((button) => {
-    button.addEventListener('click', () => {
-      document.querySelector<HTMLDialogElement>(`#${button.dataset.dialogOpen}`)?.showModal();
-    });
-  });
-
-  // Escape, focus trapping and returning focus to the opening button are handled natively by <dialog>.
-  document.querySelectorAll<HTMLDialogElement>('dialog.project-dialog').forEach((dialog) => {
-    // The dialog has no padding, so a click whose target is the dialog itself landed on the backdrop.
-    dialog.addEventListener('click', (event) => {
-      if (event.target === dialog) dialog.close();
-    });
-    dialog.querySelectorAll('[data-dialog-close]').forEach((el) => el.addEventListener('click', () => dialog.close()));
-  });
-</script>

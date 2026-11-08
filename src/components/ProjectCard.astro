@@ -8,10 +8,6 @@ interface Props {
 }
 
 const { project, index } = Astro.props;
-const dialogId = `project-${project.slug}`;
-const titleId = `${dialogId}-title`;
-const visibleTech = project.technologies.slice(0, 4);
-const hiddenTechCount = project.technologies.length - visibleTech.length;
 ---
 
 <article class="card reveal" style={`--delay:${(index % 3) * 80}ms`}>
@@ -23,88 +19,40 @@ const hiddenTechCount = project.technologies.length - visibleTech.length;
     <p class="category mono">{project.category}</p>
     <h3>{project.name}</h3>
     <p class="summary">{project.summary}</p>
-    <p class="role"><span class="mono">Role</span> {project.role}</p>
 
-    <ul class="chips" aria-label="Main technologies">
-      {visibleTech.map((tech) => <li>{tech}</li>)}
-      {hiddenTechCount > 0 && <li class="more">+{hiddenTechCount} more</li>}
-    </ul>
-
-    <button type="button" class="project-open" data-dialog-open={dialogId}>
-      View details<span class="sr-only"> for {project.name}</span>
-      <span aria-hidden="true"> →</span>
-    </button>
-  </div>
-
-  <dialog class="project-dialog" id={dialogId} aria-labelledby={titleId}>
-    <div class="dialog-bar">
-      <p class="category mono">{project.category}</p>
-      <button type="button" class="close" data-dialog-close aria-label={`Close ${project.name} details`}>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
-          <path d="M5 5l14 14M19 5L5 19"></path>
-        </svg>
-      </button>
+    <div class="contribution">
+      <h4 class="label mono">My contribution</h4>
+      <p>{project.contribution}</p>
     </div>
 
-    <div class="dialog-body">
-      <h3 id={titleId}>{project.name}</h3>
-      <p class="lead">{project.summary}</p>
+    <ul class="chips" aria-label="Technologies">
+      {project.technologies.map((tech) => <li>{tech}</li>)}
+    </ul>
 
-      {project.note && <p class="note">{project.note}</p>}
-
-      <h4 class="role-heading">My role</h4>
-      <p>{project.ownership}</p>
-
-      <div class="art-frame art-frame--dialog">
-        <ProjectArt slug={project.slug} name={project.name} index={index} sizes="(min-width: 880px) 740px, 90vw" />
-      </div>
-
-      <h4>Engineering scope</h4>
-      <ul class="bullets">
-        {
-          project.engineeringScope.map((item) => (
-            <li>
-              <strong>{item.title}:</strong> {item.detail}
-            </li>
-          ))
-        }
-      </ul>
-
-      <h4>Technologies</h4>
-      <ul class="chips chips--all">
-        {project.technologies.map((tech) => <li>{tech}</li>)}
-      </ul>
-
-      <div class="dialog-actions">
-        {
-          project.link && (
+    {
+      (project.note || project.link) && (
+        <div class="context">
+          {project.note && <p class="note">{project.note}</p>}
+          {project.link && (
             <a class="link-arrow" href={project.link.href} target="_blank" rel="noopener noreferrer">
               {project.link.label}
               <span aria-hidden="true"> ↗</span>
               <span class="sr-only"> (opens in a new tab)</span>
             </a>
-          )
-        }
-        <a class="btn btn--primary btn--small" href="#contact" data-enquiry="project" data-dialog-close>Discuss similar work</a>
-      </div>
-    </div>
-  </dialog>
+          )}
+        </div>
+      )
+    }
+  </div>
 </article>
 
 <style>
   .card {
-    position: relative;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--rule);
     border-radius: 6px;
     background: var(--bg);
-    transition: border-color 0.2s;
-  }
-
-  .card:hover,
-  .card:focus-within {
-    border-color: var(--ink);
   }
 
   .art-frame {
@@ -119,7 +67,7 @@ const hiddenTechCount = project.technologies.length - visibleTech.length;
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
     padding: 24px;
   }
 
@@ -140,15 +88,19 @@ const hiddenTechCount = project.technologies.length - visibleTech.length;
     font-size: 0.97rem;
   }
 
-  .role {
-    padding-top: 12px;
-    border-top: 1px solid var(--rule);
-    font-size: 0.92rem;
+  /* The contribution is the point of the card, so it gets its own accent rule and a label, not a heavier type size. */
+  .contribution {
+    padding-left: 14px;
+    border-left: 2px solid var(--acc);
+    font-size: 0.93rem;
   }
 
-  .role .mono {
-    margin-right: 6px;
+  .label {
+    margin: 0 0 4px;
     color: var(--mute);
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
   }
 
   .chips {
@@ -167,173 +119,23 @@ const hiddenTechCount = project.technologies.length - visibleTech.length;
     font: 400 0.76rem var(--mono);
   }
 
-  .chips .more {
-    color: var(--mute);
-    border-style: dashed;
-  }
-
-  .project-open {
-    align-self: flex-start;
-    margin-top: auto;
-    padding: 10px 0 0;
-    border: 0;
-    background: none;
-    color: var(--ink);
-    font: 600 0.95rem var(--sans);
-    cursor: pointer;
-  }
-
-  /* The whole card is the click target, but the button stays the single focusable control. */
-  .project-open::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 6px;
-  }
-
-  .project-open:hover {
-    color: var(--acc);
-  }
-
-  .project-open:focus-visible {
-    outline: none;
-  }
-
-  .project-open:focus-visible::after {
-    outline: 2px solid var(--acc);
-    outline-offset: 3px;
-  }
-
-  /* ----- Dialog ----- */
-  .project-dialog {
-    width: min(820px, calc(100% - 2 * var(--pad)));
-    max-height: min(90dvh, 960px);
-    padding: 0;
-    border: 1.5px solid var(--ink);
-    background: var(--bg);
-    color: var(--ink);
-    box-shadow: 0 24px 48px rgb(0 0 0 / 0.3);
-    overscroll-behavior: contain;
-  }
-
-  .project-dialog[open] {
+  /* Pinned to the bottom so notes and links line up when cards in a row differ in height. */
+  .context {
     display: flex;
     flex-direction: column;
-  }
-
-  .project-dialog::backdrop {
-    background: rgb(0 0 0 / 0.7);
-    backdrop-filter: blur(4px);
-  }
-
-  .dialog-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 14px 16px 14px clamp(20px, 4vw, 40px);
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .close {
-    display: inline-flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    border: 1px solid var(--rule);
-    border-radius: 50%;
-    background: transparent;
-    color: var(--ink);
-    cursor: pointer;
-  }
-
-  .close:hover {
-    background: var(--ink);
-    color: var(--bg);
-  }
-
-  .dialog-body {
-    overflow-y: auto;
-    padding: clamp(20px, 4vw, 40px);
-  }
-
-  .dialog-body h3 {
-    margin-bottom: 12px;
-    font-size: clamp(2rem, 3.4vw, 2.8rem);
-  }
-
-  .lead {
-    font-size: 1.05rem;
-  }
-
-  .art-frame--dialog {
-    margin-block: 24px;
-    border: 1px solid var(--rule);
-    border-radius: 0;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
   }
 
   .note {
-    margin-top: 20px;
-    padding: 12px 16px;
-    border-left: 3px solid var(--acc);
-    background: var(--surf);
+    color: var(--mute);
+    font-size: 0.86rem;
+  }
+
+  .context .link-arrow {
     font-size: 0.93rem;
-  }
-
-  h4 {
-    margin: 28px 0 10px;
-    padding-top: 18px;
-    border-top: 1px solid var(--rule);
-    font: 600 1rem var(--sans);
-  }
-
-  /* The first heading follows the note directly, so it keeps the rule but sheds the extra top spacing. */
-  .role-heading {
-    margin-top: 20px;
-  }
-
-  .bullets {
-    margin: 0;
-    padding-left: 20px;
-  }
-
-  .bullets strong {
-    font-weight: 600;
-  }
-
-  .bullets li {
-    margin-bottom: 6px;
-  }
-
-  .dialog-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px 20px;
-    margin-top: 28px;
-    padding-top: 20px;
-    border-top: 1px solid var(--rule);
-  }
-
-  .dialog-actions .btn {
-    margin-left: auto;
-  }
-
-  /* Without JavaScript a dialog cannot be opened, so its content is simply shown inside the card. */
-  :global(html:not(.js)) .project-open,
-  :global(html:not(.js)) .dialog-bar .close {
-    display: none;
-  }
-
-  :global(html:not(.js)) .project-dialog {
-    display: block;
-    position: static;
-    width: auto;
-    max-height: none;
-    border-width: 1px 0 0;
-    box-shadow: none;
   }
 </style>
