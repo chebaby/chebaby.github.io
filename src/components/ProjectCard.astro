@@ -52,17 +52,22 @@ const hiddenTechCount = project.technologies.length - visibleTech.length;
 
       {project.note && <p class="note">{project.note}</p>}
 
+      <h4 class="role-heading">My role</h4>
+      <p>{project.ownership}</p>
+
       <div class="art-frame art-frame--dialog">
         <ProjectArt slug={project.slug} name={project.name} index={index} sizes="(min-width: 880px) 740px, 90vw" />
       </div>
 
-      <h4>My role</h4>
-      <p>{project.roleDetail}</p>
-      {project.context?.map((paragraph) => <p class="context">{paragraph}</p>)}
-
-      <h4>Contribution</h4>
+      <h4>Engineering scope</h4>
       <ul class="bullets">
-        {project.contributions.map((item) => <li>{item}</li>)}
+        {
+          project.engineeringScope.map((item) => (
+            <li>
+              <strong>{item.title}:</strong> {item.detail}
+            </li>
+          ))
+        }
       </ul>
 
       <h4>Technologies</h4>
@@ -284,13 +289,18 @@ const hiddenTechCount = project.technologies.length - visibleTech.length;
     font: 600 1rem var(--sans);
   }
 
-  .context {
-    margin-top: 10px;
+  /* The first heading follows the note directly, so it keeps the rule but sheds the extra top spacing. */
+  .role-heading {
+    margin-top: 20px;
   }
 
   .bullets {
     margin: 0;
     padding-left: 20px;
+  }
+
+  .bullets strong {
+    font-weight: 600;
   }
 
   .bullets li {
