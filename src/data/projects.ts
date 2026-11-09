@@ -62,8 +62,7 @@ export const projects: Project[] = [
     contribution:
       'Worked on the initial application development, establishing its Laravel foundation and designing the data model for artisans and localized content.',
     technologies: ['PHP', 'Laravel 8', 'MySQL', 'Eloquent ORM', 'Blade', 'Laravel Mix'],
-    note: 'Status: early-stage and unfinished. There is no live showroom, and the link goes to the public source repository.',
-    link: { href: 'https://github.com/chebaby/showroom', label: 'View the source on GitHub' },
+    note: 'Status: early-stage and unfinished. There is no live showroom, and the link goes to the public source repository.'
   },
   {
     slug: 'fundbid',
